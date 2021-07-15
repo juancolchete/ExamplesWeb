@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #user{
+                display: block;
+            }
+            .textForm{
+               font-weight: bold;
+            }
+            .spaceTop{
+                margin-top: 20px;
+            }
+            .block{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <label for="user" class="textForm block spaceTop">Nome:</label>
+            <input id="user" name="user" type="text" placeholder="John">
+            <div class="question spaceTop">
+                <label for="laguageList" class="textForm block">Qual destas é uma linguagem de marcação?</label>
+                <input type="radio" id="html" name="languageItem" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="languageItem" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="languageItem" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+            <div class="spaceTop block">
+                <input type="checkbox" id="eula" name="eula">
+                <label for="eula" class="textForm">Li e concordo com os termos</label>
+            </div>
+            <button class="block" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
